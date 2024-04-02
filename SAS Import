@@ -1,0 +1,8 @@
+PROC IMPORT 
+    OUT= YourNewTable
+    DATAFILE= "myfolder/excelfilename.xlsx" 
+    DBMS=xlsx 
+    REPLACE;
+    SHEET="Sheet1";
+    GETNAMES=YES;
+RUN;
