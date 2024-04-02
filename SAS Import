@@ -18,3 +18,11 @@ DBMS=identifier
   DATAROW=N;
   RANGE="range-name";
 RUN;
+
+/*============================================================================*
+    IMPORTING A CSV - GUESSING ROWS
+/*============================================================================*
+proc import datafile="C:\Users\Deepanshu\Documents\dat2.csv"
+    dbms=csv replace
+    out=temp;
+    guessingrows=3;
